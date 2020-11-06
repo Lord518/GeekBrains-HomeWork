@@ -2,12 +2,12 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Lesson3 {
-    public static void main(String[] args) {
+  /*  public static void main(String[] args) {
 
 
         startGame();
 
-    }
+    }*/
 
     public static void restartGame() {
         System.out.println("Повторить игру еще раз? 1 – да / 0 – нет");
