@@ -1,24 +1,26 @@
-public class Cat extends Animals {
+public class Cat {
 
-Cat(String name){
-    super(name);
-}
-    public void run(int x) {
-        if (x > 200) System.out.println(name+ " run : false");
-        if (x <= 200) System.out.println(name +" run : true");
+    private String name;
+    private int appetite;
+    private boolean satiety;
+
+    public Cat(String name, int appetite) {
+        this.name = name;
+        this.appetite = appetite;
     }
 
-    public void swim() {
-        System.out.println(name +" swim : false");
+    public void eat(Plate p) {
+        satiety = p.decreaseFood(appetite);
     }
 
-    @Override
-    public void swim(int x, int limited) {
-        System.out.println(name + " swim : false");
+
+    public void info() {
+        System.out.println("Cat{" +
+                "name='" + name + '\'' +
+                ", appetite=" + appetite +
+                ", satiety=" + satiety +
+                '}');
     }
 
-    public void jump(float y) {
-        if (y > 2) System.out.println(name +" jump : false");
-        if (y <= 2) System.out.println(name +" jump : true");
-    }
+
 }
