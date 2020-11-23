@@ -3,7 +3,9 @@ package HWBarrier;
 import HWBarrier.Barrier;
 
 public class BasicBarrier implements Barrier {
-    BasicBarrier() { }
+    BasicBarrier() {
+    }
+
     private int lengthDistance;
 
     public BasicBarrier(int lengthDistance) {
@@ -14,7 +16,7 @@ public class BasicBarrier implements Barrier {
     public boolean pass(int s) {
         if (s >= lengthDistance) {
             return true;
-       }
+        }
         return false;
     }
 

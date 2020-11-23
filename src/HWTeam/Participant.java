@@ -2,9 +2,9 @@ package HWTeam;
 
 import HWBarrier.Barrier;
 
-public  interface Participant {
+public interface Participant {
 
- boolean doActivity(Barrier b);
+    boolean doActivity(Barrier b);
 
- }
+}
 

@@ -11,10 +11,9 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) throws ScriptException {
 
-        Team t =new Team("Oleg","Stas","Petr","Roma","SuperTeam");
+        Team t = new Team("Oleg", "Stas", "Petr", "Roma", "SuperTeam");
         Course c = new Course();
         c.dolt(t);
-
 
 
     }
