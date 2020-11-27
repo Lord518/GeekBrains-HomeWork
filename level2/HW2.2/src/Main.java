@@ -12,13 +12,11 @@ public class Main {
                 {"1", "1", "1", "1"}
         };
         squareArray(a);
-
-
-    }
+      }
 
     public static void squareArray(String[][] a) throws MyArraySizeException, MyArrayDataException {
         int sum = 0;
-        if (a.length > 4) {
+        if (a.length != 4) {
             throw new MyArraySizeException("array must be [4][4]");
         }
 
