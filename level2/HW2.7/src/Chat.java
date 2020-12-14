@@ -1,4 +1,6 @@
-public interface Chat {
+public interface Chat
+//pull-request
+ {
     void broadcastMessage(String message);
     boolean isNicknameOccupied(String nickname);
     void subscribe(ClientHandler client);

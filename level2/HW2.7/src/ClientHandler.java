@@ -79,7 +79,7 @@ public class ClientHandler {
             throw new RuntimeException("SWW", e);
         }
     }
-
+//pull-request
 
     public void receiveMessage() {
         while (true) {
@@ -94,8 +94,8 @@ public class ClientHandler {
                 if (message.startsWith("-pm")) {
                     String[] credentials = message.split("\\s");
                     String Nickname =  credentials[1];
-                    String pm = Arrays.toString(credentials);
-                            //"pm from: "+getName()+" "+ credentials[2];
+                    String pm = "pm from: "+getName()+" "+ credentials[2];
+                    //Arrays.toString(credentials);
                     chat.privateMessage(Nickname,pm);
                     sendMessage(pm);
                 }else {
