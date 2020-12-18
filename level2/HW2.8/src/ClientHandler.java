@@ -41,7 +41,7 @@ public class ClientHandler {
             receiveMessage();
         }).start();
     }
-
+//pull-request
     private void doAuth() {
         sendMessage("Please enter credentials. Sample [-auth login password]");
         try {
@@ -96,7 +96,7 @@ public class ClientHandler {
         }
     }
 
-
+//pull-request
     public void receiveMessage() {
         while (true) {
             try {

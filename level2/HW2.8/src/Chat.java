@@ -5,6 +5,6 @@ public interface Chat {
     void unsubscribe(ClientHandler client);
     AuthenticationService getAuthenticationService();
     boolean privateMessage(String massage, String name);
-
+//pull-request
 }
 

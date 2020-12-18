@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
 import java.util.function.Consumer;
-
+//pull-request
 public class ChatFrame extends JFrame {
     private StringBuilder stringBuilder;
     private TextArea textArea;
