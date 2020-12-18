@@ -7,12 +7,12 @@ import java.util.Scanner;
 public class ClientApp {
     public static void main(String[] args) {
         try {
-            Socket socket = new Socket("127.0.0.1", 5060);
+            Socket socket = new Socket("127.0.0.1", 50660);
             DataInputStream in = new DataInputStream(socket.getInputStream());
             DataOutputStream out = new DataOutputStream(socket.getOutputStream());
 
             new Thread(() -> {
-                while (true) {
+                while (!socket.isClosed()) {
                     try {
                         System.out.println(in.readUTF());
                     } catch (IOException e) {

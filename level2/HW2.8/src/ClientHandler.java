@@ -31,7 +31,7 @@ public class ClientHandler {
     public String getName() {
         return name;
     }
-int timer = 10;
+    int timer = 10;
     private void listen() {
         new Thread(() -> {
 
@@ -45,7 +45,7 @@ int timer = 10;
     private void doAuth() {
         sendMessage("Please enter credentials. Sample [-auth login password]");
         try {
-            socket.setSoTimeout(9000);
+            socket.setSoTimeout(120000);
             /**
              * -auth login password
              * sample: -auth l1 p1
@@ -75,8 +75,13 @@ int timer = 10;
                 }
             }
         }catch (SocketTimeoutException e){
-            sendMessage("Auth time is over");
+            sendMessage("Auth time is over. Socket is close!");
             chat.unsubscribe(this);
+            try {
+                socket.close();
+            } catch (IOException ioException) {
+                ioException.printStackTrace();
+            }
         }
         catch (Exception e) {
             throw new RuntimeException("SWW", e);
@@ -106,7 +111,7 @@ int timer = 10;
                     String[] credentials = message.split("\\s");
                     String Nickname =  credentials[1];
                     String pm = Arrays.toString(credentials);
-                            //"pm from: "+getName()+" "+ credentials[2];
+                    //"pm from: "+getName()+" "+ credentials[2];
                     chat.privateMessage(Nickname,pm);
                     sendMessage(pm);
                 }else {

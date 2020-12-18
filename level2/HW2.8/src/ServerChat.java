@@ -20,7 +20,7 @@ public class ServerChat implements Chat {
 
     private void start() {
         try {
-            serverSocket = new ServerSocket( 50660);
+            serverSocket = new ServerSocket( 8888);
             clients = new HashSet<>();
             authenticationService = new AuthenticationService();
 
@@ -54,7 +54,7 @@ public class ServerChat implements Chat {
     }
 
     @Override
-    public void subscribe(ClientHandler client) {
+    public synchronized void subscribe(ClientHandler client) {
         clients.add(client);
     }
 
@@ -63,16 +63,16 @@ public class ServerChat implements Chat {
         clients.remove(client);
     }
     @Override
-     public boolean privateMessage(String name, String message){
-         for (ClientHandler client : clients) {
-             if (client.getName().equals(name)) {
-                 client.sendMessage(message);
-                 return true;
-             }
-         }
+    public boolean privateMessage(String name, String message){
+        for (ClientHandler client : clients) {
+            if (client.getName().equals(name)) {
+                client.sendMessage(message);
+                return true;
+            }
+        }
 
-return false;
-     }
+        return false;
+    }
 
     public static class ServerApp {
         public static void main(String[] args) {
