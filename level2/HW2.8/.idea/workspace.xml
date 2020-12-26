@@ -19,19 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac488f19-92ac-4823-9a2e-16905661fc51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW2.7/out/production/HW2.7/ClientApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HW2.7/out/production/HW2.7/ClientApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW2.7/out/production/HW2.7/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HW2.7/out/production/HW2.7/ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW2.7/out/production/HW2.7/ServerApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HW2.7/out/production/HW2.7/ServerApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW2.7/out/production/HW2.7/ServerChat.class" beforeDir="false" afterPath="$PROJECT_DIR$/../HW2.7/out/production/HW2.7/ServerChat.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW2.7/src/ClientApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HW2.7/src/ClientApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW2.7/src/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HW2.7/src/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW2.7/src/ServerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HW2.7/src/ServerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../HW2.7/src/ServerChat.java" beforeDir="false" afterPath="$PROJECT_DIR$/../HW2.7/src/ServerChat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ServerApp.java" afterDir="false" />
-    </list>
+    <list default="true" id="ac488f19-92ac-4823-9a2e-16905661fc51" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,8 +102,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1608882777393">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="154" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608882777393" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1608303085475">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -132,5 +125,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608303085475" />
+    <state x="209" y="33" key="new project wizard" timestamp="1608882780359">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="33" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1608882780359" />
   </component>
 </project>
