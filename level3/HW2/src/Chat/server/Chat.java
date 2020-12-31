@@ -1,5 +1,5 @@
 package Chat.server;
-
+//pull-request
 public interface Chat {
     void broadcastMessage(String message);
     boolean isNicknameOccupied(String nickname);
