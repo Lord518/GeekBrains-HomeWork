@@ -1,7 +1,8 @@
-package Chat.server;
+package server;
 
-import Chat.CredentialsEntry;
-import Chat.DataBase.ClientRepository;
+
+import Client.CredentialsEntry;
+import DataBase.ClientRepository;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -17,7 +18,7 @@ public class AuthenticationService {
 
     public String findNicknameByLoginAndPassword(String login, String password) {
 
-        CredentialsEntry entry = clientRepository.authenticationDB(login, password);
+        CredentialsEntry entry = clientRepository.authenticationDB(login,password);
 
         if (!entry.equals(null)) {
             return entry.getNickname();

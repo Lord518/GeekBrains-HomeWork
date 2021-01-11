@@ -1,8 +1,8 @@
-package Chat.server;
+package server;
 
-import Chat.GUI.ChatFrame;
-import Chat.RecordingMessage.InOutMessage;
-import Chat.server.Chat;
+import GUI.ChatFrame;
+import RecordingMessage.InOutMessage;
+import server.Chat;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;

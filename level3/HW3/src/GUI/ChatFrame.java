@@ -1,6 +1,6 @@
-package Chat.GUI;
+package GUI;
 
-import Chat.RecordingMessage.InOutMessage;
+import RecordingMessage.InOutMessage;
 
 import javax.swing.*;
 import java.awt.*;
@@ -69,7 +69,6 @@ public class ChatFrame extends JFrame {
         textField.addActionListener(submitListener);
 
         setVisible(true);
-     //   doBufferedReaderDemo(file);
     }
 
     public void append(String message) {

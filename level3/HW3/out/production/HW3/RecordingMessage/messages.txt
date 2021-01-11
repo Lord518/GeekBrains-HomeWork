@@ -1,0 +1,31 @@
+null
+Please enter credentials. Sample [-auth login password]
+[INFO] Auth OK
+[Stas]: s
+[Stas]: dfgh
+[Stas]: jm
+[Stas]: jhg
+[Stas]: F
+[Stas]: Hello
+[Stas]: Hello
+[Stas]: Hello
+[Stas]: Hello
+[Stas]: Hello[Stas]: Hello[Stas]: Hello
+[Stas]: Hello
+[Stas]: Hello
+[Stas]: Hello
+[Stas]: Hello[Stas]: Hello
+[Stas]: Hello
+[Stas]: Hello
+[Stas]: Hello
+[Stas]: Hello
+[Stas]: Hello
+[Stas]: Hello
+[Stas]: Hello
+[Stas]: Hello
+[Stas]: Hello
+[Stas]: Hello
+
+
+
+
