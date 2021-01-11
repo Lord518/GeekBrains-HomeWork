@@ -1,5 +1,5 @@
 package server;
-
+//pull
 public interface Chat {
     void broadcastMessage(String message);
     boolean isNicknameOccupied(String nickname);
