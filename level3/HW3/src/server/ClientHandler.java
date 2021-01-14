@@ -69,7 +69,7 @@ public class ClientHandler {
 
                             chat.broadcastMessage(String.format("[%s] logged in", name));
                             chat.subscribe(this);
-                          //  sendMessage(InOutMessage.doReaderMessages());
+                            sendMessage(InOutMessage.doReaderMessages());
                             return;
                         } else {
                             sendMessage("[INFO] Current user is already logged in.");

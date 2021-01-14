@@ -21,7 +21,7 @@ public class ChatFrame extends JFrame {
 
         setTitle("Chat.server.Chat Frame v1.0.0");
         setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
-        /*addWindowListener( new WindowAdapter()
+        addWindowListener( new WindowAdapter()
         {
             public void windowClosing(WindowEvent e)
             {
@@ -41,7 +41,7 @@ public class ChatFrame extends JFrame {
                 }
 
             }
-        });*/
+        });
         setBounds(new Rectangle(150, 150, 400, 700));
 
         setLayout(new BorderLayout());

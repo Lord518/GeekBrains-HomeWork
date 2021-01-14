@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class InOutMessage {
-   /*static File file = new File("C:\\Users\\Stas\\Desktop\\JavaCore\\level3\\HW3\\src\\RecordingMessage\\messages.txt");
+   static File file = new File("C:\\Users\\Stas\\Desktop\\JavaCore\\level3\\HW3\\src\\RecordingMessage\\messages.txt");
 
 
     public static void doWriterMessages(String value,Boolean append) {
@@ -63,6 +63,6 @@ public class InOutMessage {
                 } catch (IOException e) {
                 }
         }
-    }*/
+    }
 }
 
