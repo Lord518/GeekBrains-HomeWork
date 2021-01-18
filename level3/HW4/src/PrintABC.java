@@ -1,6 +1,6 @@
 public class PrintABC {
     char c = 'A';
-
+//PUll
     public synchronized void printA() {
         try {
             for (int i = 0; i < 5; i++) {
