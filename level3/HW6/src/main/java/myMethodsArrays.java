@@ -1,5 +1,5 @@
 public class myMethodsArrays {
-
+//pull
     static int[] cutOffAfterLast4(int[] values) {
         if (values == null || values.length == 0) { throw new RuntimeException("Array cannot be empty!"); }
         int index = -1;

@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 public class ArraysTest {
 
-
+//pull
     @Test
     void shouldReturnAnArrayAfterTheLast4(){
         Assertions.assertArrayEquals(new int[]{6,5},myMethodsArrays.cutOffAfterLast4(new int[]{4,6,5}));

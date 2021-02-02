@@ -13,7 +13,7 @@ import java.util.Set;
 import java.util.logging.LogManager;
 
 public class ServerChat implements Chat {
-   // private static final Logger logger = Logger.getLogger(ServerChat.class);
+    private static final Logger logger = Logger.getLogger(ServerChat.class);
     private ServerSocket serverSocket;
     private Set<ClientHandler> clients;
     private AuthenticationService authenticationService;
@@ -35,11 +35,11 @@ public class ServerChat implements Chat {
             authenticationService = new AuthenticationService();
 
             while (true) {
-               // logger.info("Server is waiting for a connection ...");
+                logger.info("Server is waiting for a connection ...");
                 //System.out.println("Server is waiting for a connection ...");
                 Socket socket = serverSocket.accept();
                 ClientHandler clientHandler = new ClientHandler(socket, this);
-               // logger.info(String.format("[%s] Chat.server.Chat.Client.Client[%s] is successfully logged in", new Date(), clientHandler.getName()));
+                logger.info(String.format("[%s] Chat.server.Chat.Client.Client[%s] is successfully logged in", new Date(), clientHandler.getName()));
                // System.out.println(String.format("[%s] Chat.server.Chat.Client.Client[%s] is successfully logged in", new Date(), clientHandler.getName()));
             }
         } catch (Exception e) {
