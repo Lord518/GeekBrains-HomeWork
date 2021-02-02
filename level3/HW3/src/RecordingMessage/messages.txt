@@ -1,0 +1,11 @@
+
+Please enter credentials. Sample [-auth login password]
+Please enter credentials. Sample [-auth login password]
+[INFO] Auth OK
+
+Please enter credentials. Sample [-auth login password]
+[Nick]: Hello
+[Nick]: jlsjdfk
+[Nick]: ;oksdg;lskdlf
+[Nick]: sjdflk
+[Nick]: lskdjfklsdjf

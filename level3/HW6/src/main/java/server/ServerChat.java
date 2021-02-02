@@ -2,15 +2,18 @@ package server;
 
 
 
+import Client.Client;
+import org.apache.log4j.Logger;
+
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.logging.LogManager;
-import java.util.logging.Logger;
 
 public class ServerChat implements Chat {
+   // private static final Logger logger = Logger.getLogger(ServerChat.class);
     private ServerSocket serverSocket;
     private Set<ClientHandler> clients;
     private AuthenticationService authenticationService;
@@ -27,16 +30,17 @@ public class ServerChat implements Chat {
     private void start() {
 
         try {
-            serverSocket = new ServerSocket( 8888);
+            serverSocket = new ServerSocket( 4444);
             clients = new HashSet<>();
             authenticationService = new AuthenticationService();
 
             while (true) {
-
-                System.out.println("Server is waiting for a connection ...");
+               // logger.info("Server is waiting for a connection ...");
+                //System.out.println("Server is waiting for a connection ...");
                 Socket socket = serverSocket.accept();
                 ClientHandler clientHandler = new ClientHandler(socket, this);
-                System.out.println(String.format("[%s] Chat.server.Chat.Client.Client[%s] is successfully logged in", new Date(), clientHandler.getName()));
+               // logger.info(String.format("[%s] Chat.server.Chat.Client.Client[%s] is successfully logged in", new Date(), clientHandler.getName()));
+               // System.out.println(String.format("[%s] Chat.server.Chat.Client.Client[%s] is successfully logged in", new Date(), clientHandler.getName()));
             }
         } catch (Exception e) {
             e.printStackTrace();
