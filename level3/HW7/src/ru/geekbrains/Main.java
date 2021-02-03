@@ -7,7 +7,7 @@ import java.lang.reflect.InvocationTargetException;
 
 public class Main {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args)  {
 	// write your code here
 DoTests.start(Dog.class);
     }
