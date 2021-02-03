@@ -1,11 +1,14 @@
 package ru.geekbrains.test;
 
+//pull
 public class Dog {
 
 
     @BeforeSuite
-    private void wakeUp1() { System.out.println("Wake up " + this.getClass().getSimpleName());
+    private void wakeUp1() {
+        System.out.println("Wake up " + this.getClass().getSimpleName());
     }
+
     @AfterSuite
     private void sleep() {
         System.out.println("Sleep " + this.getClass().getSimpleName());

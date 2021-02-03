@@ -1,4 +1,5 @@
 package ru.geekbrains.test;
+//pull
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationTargetException;
@@ -21,19 +22,19 @@ public class DoTests {
         }
 
         List<Method> afterSuiteMethod = findMethodWithAnnotation(testClass, AfterSuite.class);
-        
+
         if (!afterSuiteMethod.isEmpty() && afterSuiteMethod.size() > 1) {
             throw new RuntimeException("AfterSuite annotation must be only once");
         }
 
-        if(!beforeSuiteMethods.isEmpty())invokeMethod(testClass,beforeSuiteMethods.get(0));
+        if (!beforeSuiteMethods.isEmpty()) invokeMethod(testClass, beforeSuiteMethods.get(0));
 
         for (Method method : findMethodWithAnnotation(testClass, Test.class)) {
             invokeMethod(testClass, method);
         }
 
 
-       if(!afterSuiteMethod.isEmpty()) invokeMethod(testClass,afterSuiteMethod.get(0));
+        if (!afterSuiteMethod.isEmpty()) invokeMethod(testClass, afterSuiteMethod.get(0));
 
 
     }
@@ -62,15 +63,15 @@ public class DoTests {
             }
         }
 
-         if(annotation.equals(Test.class)){
+        if (annotation.equals(Test.class)) {
             methods.sort(new Comparator<Method>() {
-              @Override
-            public int compare(Method o1, Method o2) {
-              return  o1.getAnnotation(Test.class).value()-o2.getAnnotation(Test.class).value();
-        }
-         });
+                @Override
+                public int compare(Method o1, Method o2) {
+                    return o1.getAnnotation(Test.class).value() - o2.getAnnotation(Test.class).value();
+                }
+            });
 
-          }
+        }
 
         return methods;
     }
@@ -85,14 +86,3 @@ public class DoTests {
         }
     }
 }
-//  List<Method> methods = Arrays.asList(testClass.getDeclaredMethods());
-//   Method[] methods1 = testClass.getDeclaredMethods();
-// List<Method> methods1 = sort(methods);
-
-//    for (int i = 0; i < methods.size(); i++) {
-//    System.out.println(methods1.get(i).invoke(dog));
-//if(methods.get(i).isAnnotationPresent(Test.class)){
-//Test test = methods.get(i).getAnnotation(Test.class);
-//System.out.println(test);}}
-//if(methods.get(i).isAnnotationPresent(BeforeSuite.class)){sortMethods.set(0,methods.get(i));}
-// if(methods.get(i).isAnnotationPresent(AfterSuite.class)){sortMethods.set(methods.size()-1,methods.get(i));}
